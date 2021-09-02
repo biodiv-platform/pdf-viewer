@@ -10,8 +10,8 @@
   "author": "harshzalavadiya",
   "license": "ISC",
   "dependencies": {
+    "@braintree/sanitize-url": "^5.0.2",
     "@tinyhttp/app": "^2.0.0",
-    "@tinyhttp/logger": "^1.3.0",
     "sirv": "^1.0.17"
   }
 }
