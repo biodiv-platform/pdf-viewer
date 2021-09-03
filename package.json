@@ -12,6 +12,7 @@
   "dependencies": {
     "@braintree/sanitize-url": "^5.0.2",
     "@tinyhttp/app": "^2.0.0",
+    "follow-redirects": "^1.14.3",
     "sirv": "^1.0.17"
   }
 }

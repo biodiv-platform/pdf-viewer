@@ -1,7 +1,6 @@
-import { App } from "@tinyhttp/app";
 import { sanitizeUrl } from "@braintree/sanitize-url";
-import https from "https";
-import http from "http";
+import { App } from "@tinyhttp/app";
+import request from "follow-redirects";
 import sirv from "sirv";
 
 const app = new App();
@@ -17,7 +16,7 @@ app.get("/pdf-viewer/file", async (req, res) => {
     return;
   }
 
-  const httpx = fPath.startsWith("https") ? https : http;
+  const httpx = fPath.startsWith("https") ? request.https : request.http;
 
   return new Promise((resolve, reject) => {
     try {

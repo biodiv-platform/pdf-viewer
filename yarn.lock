@@ -150,6 +150,11 @@ es-vary@^0.1.1:
   resolved "https://registry.yarnpkg.com/es-vary/-/es-vary-0.1.1.tgz#7715e1198d603b7ed8369c0e14e1f462dfbcc0d3"
   integrity sha512-4UOWrTu8lz5otSyWxcS0LbYz8WyYOEiWHGkBIu0VfhTsY+vtc7+fOSDHsxtEUBeu7mDnTwqsKg5NEXeq5Da1Hg==
 
+follow-redirects@^1.14.3:
+  version "1.14.3"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.3.tgz#6ada78118d8d24caee595595accdc0ac6abd022e"
+  integrity sha512-3MkHxknWMUtb23apkgz/83fDoe+y+qr0TdgacGIA7bew+QLBo3vdgEN2xEsuXNivpFy4CyDhBBZnNZOtalmenw==
+
 ipaddr.js@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-2.0.1.tgz#eca256a7a877e917aeb368b0a7497ddf42ef81c0"
