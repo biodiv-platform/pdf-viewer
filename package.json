@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "module": "index.js",
+  "packageManager": "pnpm@11.10.0",
   "scripts": {
     "start": "node index.js"
   },
