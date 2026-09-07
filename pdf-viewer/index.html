@@ -40,17 +40,40 @@ See https://github.com/adobe-type-tools/cmap-resources
 
   <script src="viewer.mjs" type="module"></script>
   <style>
-      #openFile,
-      #secondaryOpenFile,
-      #printButton,
-      #secondaryPrint,
-      #downloadButton,
-      #secondaryDownload,
-      #viewBookmark,
-      #viewBookmarkSeparator {
-        display: none !important;
-      }
-    </style>
+    #openFile,
+    #secondaryOpenFile,
+    #printButton,
+    #secondaryPrint,
+    #downloadButton,
+    #secondaryDownload,
+    #viewBookmark,
+    #viewBookmarkSeparator,
+    #editorModeButtons,
+    #editorModeSeparator {
+      display: none !important;
+    }
+
+    #presentationMode::before {
+      content: "" !important;
+      display: inline-block !important;
+      width: 16px !important;
+      height: 16px !important;
+      mask-image: url("images/toolbarButton-presentationMode.svg") !important;
+      -webkit-mask-image: url("images/toolbarButton-presentationMode.svg") !important;
+      mask-repeat: no-repeat !important;
+      -webkit-mask-repeat: no-repeat !important;
+      background-color: var(--main-color, #ffffff) !important;
+    }
+
+    #presentationMode {
+      background-color: transparent !important;
+      min-width: 32px !important;
+      height: 32px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+  </style>
   </head>
 
   <body tabindex="0">
@@ -599,6 +622,10 @@ See https://github.com/adobe-type-tools/cmap-resources
 
                 <div class="verticalToolbarSeparator hiddenMediumView"></div>
 
+                <button id="presentationMode" class="toolbarButton" type="button" tabindex="0" data-l10n-id="pdfjs-presentation-mode-button">
+                  <span data-l10n-id="pdfjs-presentation-mode-button-label"></span>
+                </button>
+
                 <div id="secondaryToolbarToggle" class="toolbarButtonWithContainer">
                   <button
                     id="secondaryToolbarToggleButton"
@@ -630,10 +657,6 @@ See https://github.com/adobe-type-tools/cmap-resources
                       </div>
 
                       <div class="horizontalToolbarSeparator"></div>
-
-                      <button id="presentationMode" class="toolbarButton labeled" type="button" tabindex="0" data-l10n-id="pdfjs-presentation-mode-button">
-                        <span data-l10n-id="pdfjs-presentation-mode-button-label"></span>
-                      </button>
 
                       <a href="#" id="viewBookmark" class="toolbarButton labeled" hidden tabindex="0" data-l10n-id="pdfjs-bookmark-button">
                         <span data-l10n-id="pdfjs-bookmark-button-label"></span>
