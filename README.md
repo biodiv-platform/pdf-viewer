@@ -5,8 +5,8 @@ Customised pdf.js viewer supporting server-side pdf request for external URLs
 ### Running
 
 ```sh
-yarn install
-yarn start
+pnpm install
+pnpm start
 ```
 
 ### Example

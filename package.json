@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "module": "index.js",
+  "packageManager": "pnpm@11.10.0",
   "scripts": {
     "start": "node index.js"
   },
@@ -10,9 +11,9 @@
   "author": "harshzalavadiya",
   "license": "ISC",
   "dependencies": {
-    "@braintree/sanitize-url": "^5.0.2",
+    "@braintree/sanitize-url": "^7.1.2",
     "@tinyhttp/app": "^2.0.0",
-    "follow-redirects": "^1.14.3",
+    "follow-redirects": "^1.16.0",
     "sirv": "^1.0.17"
   }
 }
